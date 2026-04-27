@@ -41,5 +41,9 @@ public class FullNameParserApp {
                 middle = String.join(" ", Arrays.copyOfRange(userInput, 1, userInput.length - 1));
             }
         }
+
+        System.out.println("\nParsed name:");
+        System.out.println("First name: " + (first.isEmpty() ? "(none)" : first));
+        System.out.println("Middle name: " + (middle.isEmpty() ? "(none)" : middle));
     }
 }
