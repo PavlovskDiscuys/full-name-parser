@@ -13,7 +13,6 @@ public class FullNameParserApp {
                 "Middle name: \n" +
                 "Last name: \n";
 
-
         // First Format
         System.out.println("First and Last name format? OR First Middle and Lastname format?");
         System.out.println("Chose format (A/B): ");
@@ -31,7 +30,7 @@ public class FullNameParserApp {
 
         if (formatInput.equals("a")) {
             if(userInput.length > 1) {
-                last = String.join(" ", Arrays.copyOfRange(userInput, 1, userInput.length - 1));
+                last = String.join(" ", Arrays.copyOfRange(userInput, 1, userInput.length));
             }
         } else {
             if (userInput.length == 2) {
